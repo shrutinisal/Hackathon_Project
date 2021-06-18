@@ -46,7 +46,7 @@ export const homeObjThree ={
     lightTextDesc: false,
     topLine:'Carbon Footprint',
     headline: 'Calculate your carbon footprint',
-    description: "Make it your goal to leave this planet with the biggest carbon footprint one can possibly leave",
+    description: "Reduce your Carbon Footprint and earn coins",
     buttonLabel:'Calculate',
     imgStart:false,
     img:require('../../Images/svg-1.png'),

@@ -85,16 +85,16 @@ export const RequestWrapper = styled.div`
 `
 export const FinalHeading = styled.h1`
     text-align:center;
-    margin-bottom: 24px;
-    font-size: 40px;
+    margin-bottom: 18px;
+    font-size: 14px;
     line-height: 1.1; 
     font-weight: 600;
     color: #010606;
-    padding-bottom:30px;
+    padding-bottom:25px;
 
     @media screen and (max-width:480px)
     {
-        font-size: 30px;
+        font-size: 10px;
     }
 `
 

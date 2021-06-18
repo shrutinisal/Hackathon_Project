@@ -8,13 +8,13 @@ const Sidebar = ({isOpen,toggle}) => {
           </Icon>
           <SidebarWrapper>
               <SidebarMenu>
-                  <SidebarLink to="sell" onClick={toggle}>About</SidebarLink>
-                  <SidebarLink to="buy" onClick={toggle}>Discover</SidebarLink>
+                  <SidebarLink to="sell" onClick={toggle}>Sell</SidebarLink>
+                  <SidebarLink to="buy" onClick={toggle}>Buy</SidebarLink>
                   <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-                  <SidebarLink to="footprint" onClick={toggle}>Sign Up</SidebarLink>
+                  <SidebarLink to="footprint" onClick={toggle}>Footprint</SidebarLink>
               </SidebarMenu>
                 <SideBtnWrap>
-                  <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                  <SidebarRoute to="/signin">Profile</SidebarRoute>
                 </SideBtnWrap>
           </SidebarWrapper>
         </SidebarContainer>

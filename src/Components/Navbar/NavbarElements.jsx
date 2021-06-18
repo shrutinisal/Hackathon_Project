@@ -119,3 +119,12 @@ export const NavBtnLink = styled(LinkR)`
       color: #010606;
   }
 `
+export const ImgLogo = styled.img`
+  height: 50px;
+  width: 50px;
+`
+export const ImgLogo1 = styled.img`
+  height: 60px;
+  width: 60px;
+  margin-bottom:-10px;
+`

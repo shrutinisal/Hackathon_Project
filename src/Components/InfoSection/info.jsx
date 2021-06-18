@@ -1,5 +1,6 @@
 import React from 'react'
 import { ButtonR } from '../ButtonRElements';
+import Icon1 from '../../Images/svg-4.png';
 import {InfoContainer, InfoWrapper,InfoRow,Column1,Column2, TextWrapper,TopLine,Heading,Subtitle,BtnWrap,ImgWrap,Img} from './InfoElements';
 const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,description,buttonLabel,img,alt,primary,dark,dark2,to}) => {
     return ( 
@@ -7,7 +8,7 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,de
         <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
-                    <Column1>
+                  <Column1>
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
@@ -27,7 +28,7 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,de
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={img} alt={alt} />
+                            <Img src={Icon1} alt={alt} />
                         </ImgWrap>
                     </Column2>
                 </InfoRow>

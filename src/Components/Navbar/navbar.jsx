@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from "./NavbarElements";
+import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink,ImgLogo} from "./NavbarElements";
 import {animateScroll as scroll} from 'react-scroll';
-
+import Icon1 from './groot.png';
 
 function Navbar ({toggle}) {
 
@@ -31,7 +31,7 @@ function Navbar ({toggle}) {
         
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toggleHome}>Recycle</NavLogo>
+                <NavLogo to="/" onClick={toggleHome}><ImgLogo src={Icon1}/>GreenWithGroot</NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
@@ -74,7 +74,7 @@ function Navbar ({toggle}) {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                    <NavBtnLink to="/signin">Profile</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>
