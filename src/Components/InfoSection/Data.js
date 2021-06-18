@@ -32,7 +32,7 @@ export const homeObjTwo ={
     imgStart:true,
     img:require('../../Images/svg-2.png'),
     alt:'Yay1',
-    to:"/sell",
+    to:"/shop",
     dark: false,
     primary: false,
     darkText: true
@@ -51,7 +51,7 @@ export const homeObjThree ={
     imgStart:false,
     img:require('../../Images/svg-1.png'),
     alt:'Yay2',
-    to:"/sell",
+    to:"/carbon",
     dark: false,
     primary: false,
     darkText: true
