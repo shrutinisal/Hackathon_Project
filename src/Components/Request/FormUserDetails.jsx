@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import {Button} from '../ButtonElements';
 
 export class FormUserDetails extends Component {
     continue = e =>{
@@ -8,7 +8,7 @@ export class FormUserDetails extends Component {
         this.props.nextStep();
     }
     render(){
-    const { values, handleChange } = this.props;
+    const { values, handleChange,styles } = this.props;
     return (
         <React.Fragment>
             <TextField
@@ -31,8 +31,8 @@ export class FormUserDetails extends Component {
             <br/>
             <Button
               label="Continue"
-              primary={true}
-              style = {styles.button}
+              primary={false}
+              style = {styles}
               onClick={this.continue}
             >Continue</Button>
         </React.Fragment>

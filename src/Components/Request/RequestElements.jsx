@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
+export const Select = styled.select`
+  width:'100%';
+  max-width:600px;
+`
 export const RequestContainer = styled.div`
+ 
   color:#fff;
-  background:red; 
+  background:#01bf71;
+  ${'' /* border:  */}
   max-width:800px;
   margin:auto;
   margin-top:100px;
   height:860px;
+  align-items:center;
+  padding:30px;
 
 
   @media screen and (max-width: 768px){
@@ -16,8 +24,8 @@ export const RequestContainer = styled.div`
 export const RequestWrapper = styled.div`
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
-  background-color:blue;
+  justify-content:space-evenly;
+  background-color:#f7f8fa;
    z-index: 1;
     
    ${'' /* height: 650px; */}
@@ -26,8 +34,8 @@ export const RequestWrapper = styled.div`
    align-items:center;
    ${'' /* max-width: 600px; */}
    max-width:1100px;
-   margin-right:auto;
-   margin-left: -25px;
+   ${'' /* margin-right:auto;
+   margin-left: -25px; */}
    ${'' /* padding: 60px 24px; */}
    padding: 0 24px;
    ${'' /* justify-content: center; */}
@@ -56,11 +64,10 @@ export const RequestWrapper = styled.div`
 //    padding: 0 15px;
 //    grid-area: col2;
 //  `
- export const RequestTextWrapper = styled.div`
-   max-width:540px;
-   padding-top:60px;
-   padding-bottom: 60px;
- `
+//  export const RequestWrapperContainer = styled.div`
+//    display:flex;
+//    justify-content:center;
+//  `
 
  export const RequestTop = styled.h1`
    text-align:center;
@@ -69,11 +76,26 @@ export const RequestWrapper = styled.div`
    line-height: 1.1; 
    font-weight: 600;
    color: #010606;
+   padding-bottom:30px;
 
    @media screen and (max-width:480px)
    {
        font-size: 32px;
    }
+`
+export const FinalHeading = styled.h1`
+    text-align:center;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1.1; 
+    font-weight: 600;
+    color: #010606;
+    padding-bottom:30px;
+
+    @media screen and (max-width:480px)
+    {
+        font-size: 30px;
+    }
 `
 
 // export const RequestColumnWrapper = styled.div`

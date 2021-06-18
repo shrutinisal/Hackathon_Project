@@ -1,9 +1,9 @@
 import React,{Component} from 'react'
 import TextField from '@material-ui/core/TextField';
+// import Button from '@material-ui/core/Button';
 import {Button} from '../ButtonElements';
 
-
-export class FormPersonalDetails extends Component {
+export class DateFinal extends Component {
     continue = e =>{
         e.preventDefault();
         this.props.nextStep();
@@ -17,31 +17,30 @@ export class FormPersonalDetails extends Component {
     return (
         <React.Fragment>
             <TextField
-              placeholder="Enter Your Address Line1"
-              label="Address1"
-              onChange={handleChange('Address1')}
-              defaultValue={values.Address1}
-              margin="normal"
-              fullWidth
+                id="date"
+                label="Pickup"
+                type="date"
+                defaultValue="2021-06-18"
+                
+                InputLabelProps={{
+                shrink: true,
+                }}
             />
             <br/>
             <TextField
-              placeholder="Enter Your Address Line2"
-              label="Address2"
-              onChange={handleChange('Address2')}
-              defaultValue={values.Address2}
-              margin="normal"
-              fullWidth
+                id="time"
+                label="Time"
+                type="time"
+                defaultValue="07:30"
+                InputLabelProps={{
+                shrink: true,
+                }}
+                inputProps={{
+                step: 300, // 5 min
+                }}
             />
             <br/>
-            <TextField
-              placeholder="Enter Your Pincode"
-              label="Pincode"
-              onChange={handleChange('Pincode')}
-              defaultValue={values.Pincode}
-              margin="normal"
-              fullWidth
-            />
+            
             <Button
               label="Back"
               primary={false}
@@ -53,7 +52,7 @@ export class FormPersonalDetails extends Component {
               primary={false}
               style = {styles}
               onClick={this.continue}
-            >Continue</Button>
+            >Confirm</Button>
         </React.Fragment>
     )
 } 
@@ -63,4 +62,4 @@ export class FormPersonalDetails extends Component {
          margin:15
      }
  }
-export default FormPersonalDetails;
+export default DateFinal;

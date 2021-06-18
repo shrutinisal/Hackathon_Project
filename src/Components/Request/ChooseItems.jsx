@@ -1,8 +1,17 @@
 import React,{Component} from 'react'
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import MultiSelect from 'react-multi-select-component';
+import {Button} from '../ButtonElements';
+import Select from 'react-select';
 
+// const styles = {
+//     button: {
+//         margin:15
+//     },
+//     select:{
+//          width:'100%',
+//          maxWidth:600
+//     }
+// }
 export class ChooseItems extends Component {
     continue = e =>{
         e.preventDefault();
@@ -13,7 +22,7 @@ export class ChooseItems extends Component {
         this.props.prevStep();
     }
     render(){
-    const { values, selected, handleChange} = this.props;
+    const { values, handleChange,styles} = this.props;
     const options = [
         { label: "Paper", value: "paper" },
         { label: "Plastics", value: "plastics" },
@@ -26,43 +35,52 @@ export class ChooseItems extends Component {
     return (
         <React.Fragment>
             
-
-            <MultiSelect
+            <div style = {styles} class="SearchClass">
+            {/* <Select
+            isMulti
             options={options}
-            value={selected}
+            value={options.value}
+            placeholder={'Select'}
             onChange={handleChange('Items')}
             labelledBy="Select"
+            width='200px'
+            
+            /> */}
+            <Select
+            isMulti
+            options={options}
+            placeholder="Select"
+            
             />
+            
+
+            </div>
+
+            
             <br/>
-            <TextField
-              placeholder="Enter Your Address Line2"
-              label="Address2"
-              onChange={handleChange('Address2')}
-              defaultValue={values.Address2}
-              margin="normal"
-              fullWidth
+            <Select
+            isMulti
+            options={options}
+            placeholder="Select"
+            
             />
             <br/>
             
             <Button
               label="Back"
-              primary={true}
-              style = {styles.button}
+              primary={false}
+              styleB = {styles}
               onClick={this.back}
             >Back</Button>
             <Button
               label="Continue"
-              primary={true}
-              style = {styles.button}
+              primary={false}
+              styleB = {styles}
               onClick={this.continue}
             >Continue</Button>
         </React.Fragment>
     )
 } 
 }
- const styles = {
-     button: {
-         margin:15
-     }
- }
+ 
 export default ChooseItems;
